@@ -2,10 +2,110 @@
   position: relative;
   height: 100vh;
 
+  &__logo {
+    font-size: 1.8rem;
+    padding: 1.5rem 1rem 8.6rem;
+    color: $primary-color;
+  }
+
   #particles-js {
     position: absolute;
     height: 100vh;
+    width: 100%;
     background-color: $primary-black;
+    z-index: -2;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: -1;
+  }
+}
+
+.hero {
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__subheading {
+    margin-left: 2rem;
+    align-self: flex-start;
+    color: $primary-white;
+  }
+
+  &__header {
+    position: relative;
+    left: -2.2rem;
+    color: $primary-color;
+    line-height: $line-height-medium;
+    margin-bottom: 2.4rem;
+
+    span {
+      position: relative;
+      right: -3.2rem;
+      color: $primary-tint-light;
+    }
+  }
+
+  &__header-tertiary {
+    position: relative;
+    color: $primary-white;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 4rem;
+      left: 0;
+      height: 0.5rem;
+      width: 25rem;
+      background-color: $primary-shade-light;
+    }
+  }
+
+  &__right {
+    padding: 10rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img-wrapper {
+    position: relative;
+
+    border-radius: 50%;
+    border: 3px solid $primary-tint-light;
+
+    &::after {
+      position: absolute;
+
+      content: '';
+      border-radius: 50%;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      position: relative;
+      object-fit: cover;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
   }
 }

@@ -12,8 +12,8 @@
   <body>
     <div class="header">
       <div id="particles-js"></div>
-      <div class="nav">
-        <div class="nav__logo">&lt;RDO/&gt;</div>
+      <div class="header__logo">&lt;RDO/&gt;</div>
+      <div class="nav display-none">
         <ul class="nav__list">
           <li class="nav__list-item"><a href="#about">About</a></li>
           <li class="nav__list-item"><a href="#skills">Skills</a></li>
@@ -23,18 +23,26 @@
           <li class="nav__list-item"><a href="#contact">Contact</a></li>
         </ul>
       </div>
+
+      <a href="#" class="hamburger collapse"><span></span></a>
+
       <div class="hero">
         <div class="hero__left">
-          <p class="hero__subheading subheading">Hi I'm</p>
-          <h1 class="hero__header heading-primary">${Roibín} O'Toole</h1>
-          <h2 class="hero__header-secondary heading-secondary">
+          <p class="hero__subheading subheading">Hi I'm...</p>
+          <h1 class="hero__header heading-primary">
+            ${Roibín} <span>O'Toole</span>
+          </h1>
+          <h2 class="hero__header-tertiary heading-tertiary">
             Aspiring Developer
           </h2>
-          <h3 class="heading-tertiary">Helllo!</h3>
         </div>
         <div class="hero__right">
           <div class="hero__img-wrapper">
-            <img src="#" alt="picture of Roibin O'Toole" class="hero__img" />
+            <img
+              src="./dist/img/chef-dude.jpeg"
+              alt="picture of Roibin O'Toole"
+              class="hero__img"
+            />
           </div>
         </div>
       </div>

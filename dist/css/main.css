@@ -89,7 +89,7 @@ body {
 }
 
 .heading-tertiary {
-  font-size: 2rem;
+  font-size: 2.4rem;
   line-height: 1.2;
   margin-bottom: 2.4rem;
 }
@@ -217,16 +217,227 @@ strong {
   font-weight: 500;
 }
 
+.display-none {
+  display: none;
+}
+
 .header {
   position: relative;
   height: 100vh;
 }
 
+.header__logo {
+  font-size: 1.8rem;
+  padding: 1.5rem 1rem 8.6rem;
+  color: #36d1c6;
+}
+
 .header #particles-js {
   position: absolute;
   height: 100vh;
+  width: 100%;
   background-color: #1a1a1a;
+  z-index: -2;
+}
+
+.header:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: -1;
+}
+
+.hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.hero__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.hero__subheading {
+  margin-left: 2rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: #fff;
+}
+
+.hero__header {
+  position: relative;
+  left: -2.2rem;
+  color: #36d1c6;
+  line-height: 1.2;
+  margin-bottom: 2.4rem;
+}
+
+.hero__header span {
+  position: relative;
+  right: -3.2rem;
+  color: #c3f1ee;
+}
+
+.hero__header-tertiary {
+  position: relative;
+  color: #fff;
+}
+
+.hero__header-tertiary::after {
+  position: absolute;
+  content: '';
+  top: 4rem;
+  left: 0;
+  height: 0.5rem;
+  width: 25rem;
+  background-color: #31bcb2;
+}
+
+.hero__right {
+  padding: 10rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__img-wrapper {
+  position: relative;
+  border-radius: 50%;
+  border: 3px solid #c3f1ee;
+}
+
+.hero__img-wrapper::after {
+  position: absolute;
+  content: '';
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.hero__img-wrapper img {
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.hamburger {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 30px;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.hamburger span {
+  position: relative;
+  margin: 0 auto;
+  top: 12px;
+}
+
+.hamburger span:before,
+.hamburger span:after {
+  position: absolute;
+  content: '';
+}
+
+.hamburger span,
+.hamburger span:before,
+.hamburger span:after {
+  width: 40px;
+  height: 6px;
+  background-color: #fff;
+  display: block;
+  border-radius: 4px;
+}
+
+.hamburger span:before {
+  margin: -12px 0 0 0;
+}
+
+.hamburger span:after {
+  margin: 12px 0 0 0;
+}
+
+.collapse span {
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.collapse.open span {
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.collapse span:before {
+  -webkit-transition-property: margin, -webkit-transform;
+  transition-property: margin, -webkit-transform;
+  transition-property: margin, transform;
+  transition-property: margin, transform, -webkit-transform;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s, 0;
+          transition-delay: 0.2s, 0;
+}
+
+.collapse.open span:before {
+  margin-top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition-delay: 0, 0.2s;
+          transition-delay: 0, 0.2s;
+}
+
+.collapse span:after {
+  -webkit-transition-property: margin, -webkit-transform;
+  transition-property: margin, -webkit-transform;
+  transition-property: margin, transform;
+  transition-property: margin, transform, -webkit-transform;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s, 0;
+          transition-delay: 0.2s, 0;
+}
+
+.collapse.open span:after {
+  margin-top: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition-delay: 0, 0.2s;
+          transition-delay: 0, 0.2s;
 }
 
 body {
