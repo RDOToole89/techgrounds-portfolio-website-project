@@ -77,21 +77,21 @@ body {
 }
 
 .heading-primary {
-  font-size: 5.2rem;
+  font-size: 4.4rem;
   line-height: 1.05;
-  margin-bottom: 3.2rem;
+  margin-bottom: 2.4rem;
 }
 
 .heading-secondary {
-  font-size: 4.4rem;
+  font-size: 3rem;
   line-height: 1.2;
-  margin-bottom: 9.6rem;
+  margin-bottom: 2.4rem;
 }
 
 .heading-tertiary {
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1.2;
-  margin-bottom: 3.2rem;
+  margin-bottom: 2.4rem;
 }
 
 .subheading {
@@ -100,8 +100,8 @@ body {
   font-weight: 500;
   color: #c3f1ee;
   text-transform: uppercase;
-  margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
+  margin-bottom: 1.6rem;
 }
 
 .btn,
@@ -215,6 +215,18 @@ body {
 
 strong {
   font-weight: 500;
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+}
+
+.header #particles-js {
+  position: absolute;
+  height: 100vh;
+  background-color: #1a1a1a;
+  z-index: -1;
 }
 
 body {

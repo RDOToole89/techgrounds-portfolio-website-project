@@ -1,0 +1,11 @@
+.header {
+  position: relative;
+  height: 100vh;
+
+  #particles-js {
+    position: absolute;
+    height: 100vh;
+    background-color: $primary-black;
+    z-index: -1;
+  }
+}
