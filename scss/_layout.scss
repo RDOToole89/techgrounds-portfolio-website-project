@@ -9,8 +9,6 @@
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
-
-  /* margin-bottom: 9.6rem; */
 }
 
 /* .grid:last-child {
@@ -33,9 +31,9 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
-/* .grid--5-cols {
+.grid--5-cols {
   grid-template-columns: repeat(5, 1fr);
-} */
+}
 
 .grid--center-v {
   align-items: center;
