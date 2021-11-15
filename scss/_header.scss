@@ -28,9 +28,61 @@
   }
 }
 
+.nav {
+  top: 0;
+  left: 0;
+  background-color: rgba($primary-color, 1);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  transform: translateX(100%);
+  transition: all 2s ease;
+
+  &.open {
+    transform: translateX(0%);
+    background-color: rgba($primary-shade-dark, 0.8);
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__list-item {
+    list-style: none;
+
+    font-size: 3rem;
+    text-transform: uppercase;
+
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transform: translateX(200%);
+
+    &.open-item {
+      transform: translate(0%);
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      transition: all 500ms ease;
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}
+
 .hero {
   display: grid;
-
   grid-template-columns: 1fr;
 
   &__left {
@@ -41,6 +93,7 @@
   }
 
   &__subheading {
+    font-size: 2.4rem;
     margin-left: 2rem;
     align-self: flex-start;
     color: $primary-white;
@@ -52,11 +105,16 @@
     color: $primary-color;
     line-height: $line-height-medium;
     margin-bottom: 2.4rem;
+    transition: all 1s ease;
 
     span {
       position: relative;
       right: -3.2rem;
       color: $primary-tint-light;
+    }
+
+    &:hover {
+      color: $secondary-color;
     }
   }
 
@@ -76,21 +134,24 @@
   }
 
   &__right {
-    padding: 10rem 0;
+    padding: 4rem 0;
     display: flex;
+    flex-direction: column;
+    gap: 5.2rem;
     justify-content: center;
     align-items: center;
   }
 
-  &__img-wrapper {
+  img {
     position: relative;
-
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: 3px solid $primary-tint-light;
 
     &::after {
       position: absolute;
-
       content: '';
       border-radius: 50%;
       top: 0;
@@ -99,13 +160,26 @@
       height: 100%;
       background-color: rgba(0, 0, 0, 0.1);
     }
+  }
+}
 
-    img {
-      position: relative;
-      object-fit: cover;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-    }
+.socials {
+  font-size: 4rem;
+
+  .icon {
+    color: #fff;
+    transition: all 2s ease;
+  }
+
+  &__facebook:hover {
+    color: $primary-color;
+  }
+
+  &__instagram:hover {
+    color: $primary-color;
+  }
+
+  &__linkedin:hover {
+    color: $primary-color;
   }
 }

@@ -10,12 +10,15 @@
     <title>TechGrounds - Portfolio Website - Roibin O'Toole</title>
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <div id="particles-js"></div>
+
+
+      <a href="#" class="hamburger collapse"><span></span></a>
 
       <div class="container">
         <div class="header__logo">&lt;RDO/&gt;</div>
-        <div class="nav display-none">
+        <div class="nav">
           <ul class="nav__list">
             <li class="nav__list-item"><a href="#about">About</a></li>
             <li class="nav__list-item"><a href="#skills">Skills</a></li>
@@ -26,9 +29,9 @@
           </ul>
         </div>
 
-        <a href="#" class="hamburger collapse"><span></span></a>
+       
 
-        <div class="hero">
+        <div class="hero" >
           <div class="hero__left">
             <p class="hero__subheading subheading">Hi I'm...</p>
             <h1 class="hero__header heading-primary">
@@ -39,20 +42,71 @@
             </h2>
           </div>
           <div class="hero__right">
-            <div class="hero__img-wrapper">
               <img
                 src="./dist/img/chef-dude.jpeg"
                 alt="picture of Roibin O'Toole"
                 class="hero__img"
               />
-            </div>
+            <button class="btn btn--outline center-gap-1 "><a href="https://github.com/RDOToole89">Github</a>    <ion-icon
+              class="icon socials__github
+              style="color: white"
+              name="logo-github"
+            ></ion-icon>
+            </button>
           </div>
+       
+
+        <div class="socials">
+          <ion-icon
+            class="icon socials__facebook
+            style="color: white"
+            name="logo-facebook"
+          ></ion-icon>
+          <ion-icon
+            class="icon socials__instagram 
+            style="color: white"
+            name="logo-instagram"
+          ></ion-icon>
+          <ion-icon
+            class="icon socials__linkedin
+            style="color: white"
+            name="logo-linkedin"
+          ></ion-icon>
         </div>
       </div>
-    </div>
+
+      </header>
+
+      <main class="main">
+
+        <section class="skills">
+
+          <div class="skills-cards">
+            
+
+
+          </div>
+
+
+
+
+        </section>
+
+      </main>
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="./dist/js/particles.js"></script>
     <script src="./dist/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  
+  
+  
   </body>
 </html>
