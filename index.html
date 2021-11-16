@@ -15,7 +15,12 @@
 
       <a href="#" class="hamburger collapse"><span></span></a>
 
-      <div class="header__logo">&lt;RDO/&gt;</div>
+      <div class="container">
+        <div class="header__logo">&lt;RDO/&gt;</div>
+
+        <nav class="nav-secondary"></nav>
+      </div>
+
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__list-item"><a href="#about">About</a></li>
@@ -28,7 +33,7 @@
       </nav>
 
       <div class="hero">
-        <div class="hero__left mg-bottom-md">
+        <div class="hero__left">
           <p class="hero__subheading subheading">Hi I'm...</p>
           <h1 class="hero__header heading-primary">
             ${Roibín} <span>O'Toole</span>
@@ -47,16 +52,18 @@
             <a href="https://github.com/RDOToole89">Github</a>
           </button> -->
         </div>
-      </div>
-
-      <div class="socials">
-        <ion-icon name="logo-linkedin"></ion-icon>
-        <ion-icon name="logo-github"></ion-icon>
+        <div class="socials">
+          <ion-icon name="logo-linkedin"></ion-icon>
+          <ion-icon name="logo-github"></ion-icon>
+        </div>
       </div>
     </header>
+    <div class="ribbon"></div>
 
-    <main class="main">
+    <!-- <main class="main">
+
       <section class="section-about">
+        <div class="container">
         <div class="about__icon">
           <ion-icon size="large" name="person-outline"></ion-icon>
         </div>
@@ -68,58 +75,61 @@
           molestias, rerum nemo sed, deserunt impedit eum. Dolore aliquam dicta
           minima.
         </p>
+      </div>
       </section>
 
       <section class="section-skills">
-        <div class="skill-cards">
-          <div class="skill-card">
-            <div class="skill-card__top">
-              <div class="skill-card__icon">
-                <ion-icon size="large" name="code-slash-outline"></ion-icon>
+       
+          <div class="skill-cards">
+            <div class="skill-card">
+              <div class="skill-card__top">
+                <div class="skill-card__icon">
+                  <ion-icon size="large" name="code-slash-outline"></ion-icon>
+                </div>
+                <h3 class="skill-card__top__heading-tertiary heading-tertiary">
+                  Coding Skills
+                </h3>
               </div>
-              <h3 class="skill-card__top__heading-tertiary heading-tertiary">
-                Coding Skills
-              </h3>
-            </div>
-            <div class="skill-card__bottom">
-              <ul class="skill-card__list">
-                <li class="skill-card__item">
-                  <ion-icon
-                    class="list-icon"
-                    name="checkmark-outline"
-                  ></ion-icon
-                  ><span>JavaScript</span>
-                </li>
-                <li class="skill-card__item">
-                  <ion-icon
-                    class="list-icon"
-                    name="checkmark-outline"
-                  ></ion-icon
-                  ><span>React</span>
-                </li>
-                <li class="skill-card__item">
-                  <ion-icon
-                    class="list-icon"
-                    name="checkmark-outline"
-                  ></ion-icon
-                  ><span>NodeJS</span>
-                </li>
-                <li class="skill-card__item">
-                  <ion-icon
-                    class="list-icon"
-                    name="checkmark-outline"
-                  ></ion-icon
-                  ><span>Sequelize ORM</span>
-                </li>
-                <li class="skill-card__item">
-                  <ion-icon
-                    class="list-icon"
-                    name="checkmark-outline"
-                  ></ion-icon
-                  ><span>PostgreSQL</span>
-                </li>
-              </ul>
-            </div>
+              <div class="skill-card__bottom">
+                <ul class="skill-card__list">
+                  <li class="skill-card__item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>JavaScript</span>
+                  </li>
+                  <li class="skill-card__item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>React</span>
+                  </li>
+                  <li class="skill-card__item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>NodeJS</span>
+                  </li>
+                  <li class="skill-card__item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>Sequelize ORM</span>
+                  </li>
+                  <li class="skill-card__item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>PostgreSQL</span>
+                  </li>
+                </ul>
+              </div>
+      
           </div>
         </div>
       </section>
@@ -178,7 +188,30 @@
           </div>
         </div>
       </section>
-    </main>
+
+      <section class="section-contact">
+      
+          <div class="about__icon">
+            <ion-icon size="large" name="person-outline"></ion-icon>
+          </div>
+          <h2 class="about__header heading-secondary">Contact</h2>
+        </div>
+
+        <form class="contact-form ">
+          <label for="firstname">Full name:</label>
+          <input class="contact-form__input" type="text" name="message" />
+          <label for="message">Message:</label>
+          <textarea name="message" cols="30" rows="10"></textarea>
+        </form>
+      </section>
+    </main> -->
+    <!-- 
+    <footer class="footer">
+      <div class="icons">
+        <ion-icon name="logo-linkedin"></ion-icon>
+        <ion-icon name="logo-github"></ion-icon>
+      </div>
+    </footer> -->
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="./dist/js/particles.js"></script>

@@ -1,16 +1,19 @@
 .section-about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   padding: 6.4rem 2.4rem;
-  display: grid;
-  justify-items: start;
-  grid-template-columns: 1fr;
   background-color: $primary-tint-light;
 }
 
 .about {
   &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: $secondary-color;
     border: 5px solid $primary-grey;
-    justify-self: start;
+
     padding: 1.2rem;
     border-radius: 50%;
     margin-bottom: 2rem;

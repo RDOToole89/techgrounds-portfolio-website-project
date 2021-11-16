@@ -1,8 +1,9 @@
 .header {
   position: relative;
-  height: 100vh;
+  height: calc(100vh - 11px);
 
   &__logo {
+    align-self: flex-start;
     font-size: 2rem;
     padding: 1.5rem 1rem 4.8rem;
     color: $primary-color;
@@ -10,7 +11,7 @@
 
   #particles-js {
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: $primary-black;
     z-index: -2;
@@ -82,8 +83,11 @@
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
 
   &__left {
     display: flex;
@@ -100,7 +104,6 @@
 
   &__header {
     position: relative;
-    left: -2.2rem;
     color: $primary-color;
     line-height: $line-height-medium;
     margin-bottom: 2.4rem;
@@ -108,7 +111,6 @@
 
     span {
       position: relative;
-      right: -3.2rem;
       color: $primary-tint-light;
     }
 
@@ -170,5 +172,30 @@
 
   &__linkedin:hover {
     color: $primary-color;
+  }
+}
+
+@media (min-width: 400px) {
+  .heading-primary {
+    font-size: 4.2rem;
+  }
+
+  .hero {
+    height: 70%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+    &__right {
+      img {
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+
+  .hamburger {
+    display: none;
   }
 }
