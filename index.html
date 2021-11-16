@@ -11,15 +11,21 @@
   </head>
   <body>
     <header class="header">
+      <div class="header__logo">&lt;RDO/&gt;</div>
       <div id="particles-js"></div>
 
       <a href="#" class="hamburger collapse"><span></span></a>
 
-      <div class="container">
-        <div class="header__logo">&lt;RDO/&gt;</div>
-
-        <nav class="nav-secondary"></nav>
-      </div>
+      <nav class="nav-secondary">
+        <div class="container-fluid">
+          <ul class="nav-secondary__list">
+            <li class="nav-secondary__item active">About</li>
+            <li class="nav-secondary__item">Skills</li>
+            <li class="nav-secondary__item">Projects</li>
+            <li class="nav-secondary__item">Contact</li>
+          </ul>
+        </div>
+      </nav>
 
       <nav class="nav">
         <ul class="nav__list">
@@ -48,170 +54,14 @@
             alt="picture of Roibin O'Toole"
             class="hero__img"
           />
-          <!-- <button class="btn btn--outline center-gap-1">
-            <a href="https://github.com/RDOToole89">Github</a>
-          </button> -->
         </div>
         <div class="socials">
-          <ion-icon name="logo-linkedin"></ion-icon>
-          <ion-icon name="logo-github"></ion-icon>
+          <ion-icon class="icon" name="logo-linkedin"></ion-icon>
+          <ion-icon class="icon" name="logo-github"></ion-icon>
         </div>
       </div>
     </header>
     <div class="ribbon"></div>
-
-    <!-- <main class="main">
-
-      <section class="section-about">
-        <div class="container">
-        <div class="about__icon">
-          <ion-icon size="large" name="person-outline"></ion-icon>
-        </div>
-        <h2 class="about__header heading-secondary">About Me</h2>
-        <p class="about__text paragraph-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex
-          quibusdam voluptatibus fugiat quis in distinctio esse officiis ipsa
-          animi neque voluptatem atque expedita veniam hic adipisci sunt maiores
-          molestias, rerum nemo sed, deserunt impedit eum. Dolore aliquam dicta
-          minima.
-        </p>
-      </div>
-      </section>
-
-      <section class="section-skills">
-       
-          <div class="skill-cards">
-            <div class="skill-card">
-              <div class="skill-card__top">
-                <div class="skill-card__icon">
-                  <ion-icon size="large" name="code-slash-outline"></ion-icon>
-                </div>
-                <h3 class="skill-card__top__heading-tertiary heading-tertiary">
-                  Coding Skills
-                </h3>
-              </div>
-              <div class="skill-card__bottom">
-                <ul class="skill-card__list">
-                  <li class="skill-card__item">
-                    <ion-icon
-                      class="list-icon"
-                      name="checkmark-outline"
-                    ></ion-icon
-                    ><span>JavaScript</span>
-                  </li>
-                  <li class="skill-card__item">
-                    <ion-icon
-                      class="list-icon"
-                      name="checkmark-outline"
-                    ></ion-icon
-                    ><span>React</span>
-                  </li>
-                  <li class="skill-card__item">
-                    <ion-icon
-                      class="list-icon"
-                      name="checkmark-outline"
-                    ></ion-icon
-                    ><span>NodeJS</span>
-                  </li>
-                  <li class="skill-card__item">
-                    <ion-icon
-                      class="list-icon"
-                      name="checkmark-outline"
-                    ></ion-icon
-                    ><span>Sequelize ORM</span>
-                  </li>
-                  <li class="skill-card__item">
-                    <ion-icon
-                      class="list-icon"
-                      name="checkmark-outline"
-                    ></ion-icon
-                    ><span>PostgreSQL</span>
-                  </li>
-                </ul>
-              </div>
-      
-          </div>
-        </div>
-      </section>
-
-      <section class="section-projects">
-        <div class="projects">
-          <div class="about__icon">
-            <ion-icon size="large" name="person-outline"></ion-icon>
-          </div>
-          <h2 class="about__header heading-secondary">Projects</h2>
-
-          <div class="project-card">
-            <img
-              class="project-card__img"
-              src="./dist/img/chef-available-app.png"
-              alt=""
-            />
-            <h3 class="project-card__header heading-tertiary">
-              Chef Available
-            </h3>
-            <p class="project-card__text paragraph-text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
-              tempore ratione sunt ea dignissimos optio eos nam ducimus fugit
-              vel?
-            </p>
-          </div>
-          <div class="project-card">
-            <img
-              class="project-card__img"
-              src="./dist/img/chef-available-app.png"
-              alt=""
-            />
-            <h3 class="project-card__header heading-tertiary">
-              Chef Available
-            </h3>
-            <p class="project-card__text paragraph-text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
-              tempore ratione sunt ea dignissimos optio eos nam ducimus fugit
-              vel?
-            </p>
-          </div>
-          <div class="project-card">
-            <img
-              class="project-card__img"
-              src="./dist/img/chef-available-app.png"
-              alt=""
-            />
-            <h3 class="project-card__header heading-tertiary">
-              Chef Available
-            </h3>
-            <p class="project-card__text paragraph-text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
-              tempore ratione sunt ea dignissimos optio eos nam ducimus fugit
-              vel?
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-contact">
-      
-          <div class="about__icon">
-            <ion-icon size="large" name="person-outline"></ion-icon>
-          </div>
-          <h2 class="about__header heading-secondary">Contact</h2>
-        </div>
-
-        <form class="contact-form ">
-          <label for="firstname">Full name:</label>
-          <input class="contact-form__input" type="text" name="message" />
-          <label for="message">Message:</label>
-          <textarea name="message" cols="30" rows="10"></textarea>
-        </form>
-      </section>
-    </main> -->
-    <!-- 
-    <footer class="footer">
-      <div class="icons">
-        <ion-icon name="logo-linkedin"></ion-icon>
-        <ion-icon name="logo-github"></ion-icon>
-      </div>
-    </footer> -->
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="./dist/js/particles.js"></script>

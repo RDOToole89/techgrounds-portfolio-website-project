@@ -1,12 +1,21 @@
 .header {
   position: relative;
   height: calc(100vh - 11px);
+  overflow: hidden;
 
   &__logo {
-    align-self: flex-start;
-    font-size: 2rem;
-    padding: 1.5rem 1rem 4.8rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-size: 2.4rem;
+    font-weight: $font-weight-medium;
     color: $primary-color;
+    cursor: pointer;
+    transition: all 400ms ease;
+
+    &:hover {
+      color: $secondary-color;
+    }
   }
 
   #particles-js {
@@ -42,7 +51,7 @@
 
   &.open {
     transform: translateX(0%);
-    background-color: rgba($primary-shade-dark, 0.8);
+    background-color: rgba($primary-shade-dark, 0.97);
   }
 
   &__list {
@@ -57,7 +66,6 @@
 
   &__list-item {
     list-style: none;
-
     font-size: 3rem;
     text-transform: uppercase;
 
@@ -82,12 +90,43 @@
   }
 }
 
+.nav-secondary {
+  padding: 2rem 0 0 0;
+  display: none;
+
+  &__list {
+    color: $primary-white;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    text-transform: uppercase;
+    transition: all 200ms ease;
+    cursor: pointer;
+    padding-bottom: 1rem;
+
+    &.active {
+      color: $secondary-color;
+      border-bottom: 3px solid white;
+    }
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
 .hero {
   display: flex;
+  padding: 8rem 4rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 4rem;
+  gap: 6rem;
 
   &__left {
     display: flex;
@@ -98,7 +137,6 @@
 
   &__subheading {
     font-size: 1.8rem;
-    margin-left: 2rem;
     color: $primary-white;
   }
 
@@ -121,6 +159,7 @@
 
   &__header-tertiary {
     position: relative;
+    font-size: 2rem;
     color: $primary-white;
 
     &::after {
@@ -144,8 +183,8 @@
 
   img {
     object-fit: cover;
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     border: 3px solid $primary-tint-light;
   }
@@ -155,42 +194,45 @@
   position: absolute;
   bottom: 2rem;
   left: 2rem;
-  font-size: 4rem;
+  font-size: 3.2rem;
 
   .icon {
+    cursor: pointer;
     color: #fff;
     transition: all 0.5s ease;
-  }
 
-  &__facebook:hover {
-    color: $primary-color;
-  }
-
-  &__instagram:hover {
-    color: $primary-color;
-  }
-
-  &__linkedin:hover {
-    color: $primary-color;
+    &:hover {
+      color: $primary-color;
+    }
   }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 340px) {
+  .hero {
+    padding: 14rem 2rem 0rem 2rem;
+  }
+}
+
+@media (min-width: 600px) {
   .heading-primary {
-    font-size: 4.2rem;
+    font-size: 4.8rem;
+  }
+
+  .nav-secondary {
+    display: flex;
+    font-size: 1.8rem;
+    justify-content: end;
   }
 
   .hero {
-    height: 70%;
+    height: 80%;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
+    padding: 0rem 4.2rem;
 
     &__right {
       img {
-        width: 300px;
-        height: 300px;
+        width: 225px;
+        height: 225px;
       }
     }
   }
