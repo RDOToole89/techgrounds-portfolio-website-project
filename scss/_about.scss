@@ -1,0 +1,33 @@
+.section-about {
+  padding: 6.4rem 2.4rem;
+  display: grid;
+  justify-items: start;
+  grid-template-columns: 1fr;
+  background-color: $primary-tint-light;
+}
+
+.about {
+  &__icon {
+    color: $secondary-color;
+    border: 5px solid $primary-grey;
+    justify-self: start;
+    padding: 1.2rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+  }
+
+  &__header {
+    position: relative;
+    text-transform: uppercase;
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 5px;
+      width: 100%;
+      background-color: $secondary-tint-dark;
+      top: 30px;
+      left: 0px;
+    }
+  }
+}

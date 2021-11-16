@@ -13,86 +13,124 @@
     <header class="header">
       <div id="particles-js"></div>
 
-
       <a href="#" class="hamburger collapse"><span></span></a>
 
-      <div class="container">
-        <div class="header__logo">&lt;RDO/&gt;</div>
-        <div class="nav">
-          <ul class="nav__list">
-            <li class="nav__list-item"><a href="#about">About</a></li>
-            <li class="nav__list-item"><a href="#skills">Skills</a></li>
-            <li class="nav__list-item">
-              <a href="#projects">Projects</a>
-            </li>
-            <li class="nav__list-item"><a href="#contact">Contact</a></li>
-          </ul>
+      <div class="header__logo">&lt;RDO/&gt;</div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list-item"><a href="#about">About</a></li>
+          <li class="nav__list-item"><a href="#skills">Skills</a></li>
+          <li class="nav__list-item">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero">
+        <div class="hero__left mg-bottom-md">
+          <p class="hero__subheading subheading">Hi I'm...</p>
+          <h1 class="hero__header heading-primary">
+            ${Roibín} <span>O'Toole</span>
+          </h1>
+          <h2 class="hero__header-tertiary heading-tertiary">
+            Aspiring Developer
+          </h2>
         </div>
-
-       
-
-        <div class="hero" >
-          <div class="hero__left">
-            <p class="hero__subheading subheading">Hi I'm...</p>
-            <h1 class="hero__header heading-primary">
-              ${Roibín} <span>O'Toole</span>
-            </h1>
-            <h2 class="hero__header-tertiary heading-tertiary">
-              Aspiring Developer
-            </h2>
-          </div>
-          <div class="hero__right">
-              <img
-                src="./dist/img/chef-dude.jpeg"
-                alt="picture of Roibin O'Toole"
-                class="hero__img"
-              />
-            <button class="btn btn--outline center-gap-1 "><a href="https://github.com/RDOToole89">Github</a>    <ion-icon
-              class="icon socials__github
-              style="color: white"
-              name="logo-github"
-            ></ion-icon>
-            </button>
-          </div>
-       
-
-        <div class="socials">
-          <ion-icon
-            class="icon socials__facebook
-            style="color: white"
-            name="logo-facebook"
-          ></ion-icon>
-          <ion-icon
-            class="icon socials__instagram 
-            style="color: white"
-            name="logo-instagram"
-          ></ion-icon>
-          <ion-icon
-            class="icon socials__linkedin
-            style="color: white"
-            name="logo-linkedin"
-          ></ion-icon>
+        <div class="hero__right">
+          <img
+            src="./dist/img/chef-dude.jpeg"
+            alt="picture of Roibin O'Toole"
+            class="hero__img"
+          />
+          <!-- <button class="btn btn--outline center-gap-1">
+            <a href="https://github.com/RDOToole89">Github</a>
+          </button> -->
         </div>
       </div>
 
-      </header>
+      <div class="socials">
+        <ion-icon name="logo-linkedin"></ion-icon>
+        <ion-icon name="logo-github"></ion-icon>
+      </div>
+    </header>
 
-      <main class="main">
+    <main class="main">
+      <section class="section-about">
+        <div class="about__icon">
+          <ion-icon size="large" name="person-outline"></ion-icon>
+        </div>
+        <h2 class="about__header heading-secondary">About Me</h2>
+        <p class="about__text paragraph-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex
+          quibusdam voluptatibus fugiat quis in distinctio esse officiis ipsa
+          animi neque voluptatem atque expedita veniam hic adipisci sunt maiores
+          molestias, rerum nemo sed, deserunt impedit eum. Dolore aliquam dicta
+          minima.
+        </p>
+      </section>
 
-        <section class="skills">
-
-          <div class="skills-cards">
-            
-
-
+      <section class="section-skills">
+        <div class="skill-cards">
+          <div class="skill-card">
+            <div class="skill-card__top">
+              <div class="skill-card__icon">
+                <ion-icon size="large" name="code-slash-outline"></ion-icon>
+              </div>
+              <h3 class="skill-card__top__heading-tertiary heading-tertiary">
+                Coding Skills
+              </h3>
+            </div>
+            <div class="skill-card__bottom">
+              <ul class="skill-card__list">
+                <li class="skill-card__item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>JavaScript</span>
+                </li>
+                <li class="skill-card__item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>React</span>
+                </li>
+                <li class="skill-card__item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>NodeJS</span>
+                </li>
+                <li class="skill-card__item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>Sequelize ORM</span>
+                </li>
+                <li class="skill-card__item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon
+                  ><span>PostgreSQL</span>
+                </li>
+              </ul>
+            </div>
           </div>
+        </div>
+      </section>
 
-
-
-
-        </section>
-
-      </main>
+      <section class="section-projects">
+        <div class="projects grid--2-cols">
+          <h2>Chef Available</h2>
+          <img src="./dist/img/chef-available-app.png" alt="" />
+        </div>
+      </section>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="./dist/js/particles.js"></script>
@@ -105,8 +143,5 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-  
-  
-  
   </body>
 </html>
