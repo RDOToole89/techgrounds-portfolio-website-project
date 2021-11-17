@@ -56,7 +56,7 @@
   height: 100%;
   z-index: 100;
   transform: translateX(100%);
-  transition: all 2s ease;
+  transition: all 1s ease;
 
   &.open {
     transform: translateX(0%);
@@ -65,9 +65,10 @@
 
   &__list {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    padding-left: 30%;
+    justify-content: center;
+    align-items: flex-start;
     gap: 4rem;
     width: 100%;
     height: 100%;
@@ -104,7 +105,6 @@
   padding: 2rem 0 0 0;
 
   &__list {
-    color: $primary-white;
     display: flex;
     gap: 2rem;
     list-style: none;
@@ -113,77 +113,18 @@
   }
 
   &__item {
+    color: $primary-white;
     text-transform: uppercase;
     transition: all 200ms ease;
     cursor: pointer;
     padding-bottom: 0.3rem;
     border-bottom: 3px solid transparent;
 
-    &.active {
+    &.active .link {
       color: $secondary-color;
+      padding-bottom: 5px;
       border-bottom: 3px solid white;
     }
-  }
-}
-
-.hero {
-  display: flex;
-  padding: 4.8rem 2rem;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 4.2rem;
-
-  &__info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  &__heading {
-    position: relative;
-    color: $primary-color;
-    line-height: $line-height-medium;
-    margin-bottom: 2.4rem;
-    transition: all 0.5s ease;
-
-    span {
-      position: relative;
-      color: $primary-tint-light;
-    }
-
-    &:hover {
-      color: $secondary-color;
-    }
-  }
-
-  &__heading-tertiary {
-    position: relative;
-    margin-bottom: 6.4rem;
-
-    &::after {
-      position: absolute;
-      content: '';
-      top: 3rem;
-      left: 0;
-      height: 0.5rem;
-      width: 100%;
-      background-color: $primary-shade-light;
-    }
-  }
-
-  &__image-box {
-    display: flex;
-    flex-direction: column;
-  }
-
-  img {
-    object-fit: cover;
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    border: 3px solid $primary-tint-light;
   }
 }
 
@@ -201,48 +142,5 @@
     &:hover {
       color: $primary-color;
     }
-  }
-}
-
-@media (min-width: 340px) {
-  .hero {
-    padding: 10rem 2rem 0rem 2rem;
-  }
-}
-
-@media (min-width: 600px) {
-  .heading-primary {
-    font-size: 4.8rem;
-  }
-
-  .header__logo {
-    display: none;
-  }
-
-  .nav-secondary {
-    display: flex;
-    font-size: 2rem;
-    justify-content: space-between;
-  }
-
-  .hero {
-    height: 80%;
-    flex-direction: row;
-    padding: 0rem 4.2rem;
-
-    &__info {
-      align-items: start;
-    }
-
-    &__image-box {
-      img {
-        width: 225px;
-        height: 225px;
-      }
-    }
-  }
-
-  .hamburger {
-    display: none;
   }
 }

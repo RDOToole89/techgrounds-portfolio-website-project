@@ -90,10 +90,9 @@ body {
   color: white;
   background-color: transparent;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 500;
   padding: 1.2rem 1.6rem;
-  border-radius: 3.6rem;
   border: 2px solid #fff;
   cursor: pointer;
   font-family: inherit;
@@ -133,7 +132,7 @@ body {
   color: #fff;
   text-decoration: none;
   border-bottom: 3px solid transparent;
-  padding-bottom: 3px;
+  padding-bottom: 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -183,55 +182,6 @@ body {
   height: 11px;
   background-image: -webkit-gradient(linear, left top, right top, from(#d7461a), color-stop(#c1272d), color-stop(#733782), color-stop(#1f28ce), to(#0088fa));
   background-image: linear-gradient(to right, #d7461a, #c1272d, #733782, #1f28ce, #0088fa);
-}
-
-.margin-right-sm {
-  margin-right: 1.6rem !important;
-}
-
-.mg-bottom-sm {
-  margin-bottom: 2.4rem !important;
-}
-
-.mg-bottom-md {
-  margin-bottom: 4.8rem !important;
-}
-
-.center-text {
-  text-align: center;
-}
-
-strong {
-  font-weight: 500;
-}
-
-.display-none {
-  display: none;
-}
-
-.center-gap-1rem {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 1rem;
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .hamburger {
@@ -328,6 +278,55 @@ strong {
           transition-delay: 0, 0.2s;
 }
 
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.mg-bottom-sm {
+  margin-bottom: 2.4rem !important;
+}
+
+.mg-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+  text-align: center;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.display-none {
+  display: none;
+}
+
+.center-gap-1rem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .header {
   position: relative;
   height: calc(100vh - 11px);
@@ -389,8 +388,8 @@ strong {
   z-index: 100;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: all 2s ease;
-  transition: all 2s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .nav.open {
@@ -403,16 +402,17 @@ strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-left: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 4rem;
   width: 100%;
   height: 100%;
@@ -456,7 +456,6 @@ strong {
 }
 
 .nav-secondary__list {
-  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,6 +470,7 @@ strong {
 }
 
 .nav-secondary__item {
+  color: #fff;
   text-transform: uppercase;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
@@ -479,16 +479,35 @@ strong {
   border-bottom: 3px solid transparent;
 }
 
-.nav-secondary__item.active {
+.nav-secondary__item.active .link {
   color: #008f11;
+  padding-bottom: 5px;
   border-bottom: 3px solid white;
+}
+
+.socials {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  font-size: 3.2rem;
+}
+
+.socials .icon {
+  cursor: pointer;
+  color: #fff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.socials .icon:hover {
+  color: #36d1c6;
 }
 
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 4.8rem 2rem;
+  padding: 8.4rem 2rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -499,7 +518,6 @@ strong {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 4.2rem;
 }
 
 .hero__info {
@@ -513,7 +531,10 @@ strong {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
+}
+
+.hero__info--btn {
+  display: none;
 }
 
 .hero__heading {
@@ -557,6 +578,7 @@ strong {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 4rem;
 }
 
 .hero img {
@@ -568,27 +590,12 @@ strong {
   border: 3px solid #c3f1ee;
 }
 
-.socials {
-  position: absolute;
-  bottom: 2rem;
-  left: 2rem;
-  font-size: 3.2rem;
-}
-
-.socials .icon {
-  cursor: pointer;
-  color: #fff;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.socials .icon:hover {
-  color: #36d1c6;
-}
-
 @media (min-width: 340px) {
+  .heading-primary {
+    font-size: 3.2rem;
+  }
   .hero {
-    padding: 10rem 2rem 0rem 2rem;
+    padding: 8rem 2rem 0rem 2rem;
   }
 }
 
@@ -615,15 +622,30 @@ strong {
         -ms-flex-direction: row;
             flex-direction: row;
     padding: 0rem 4.2rem;
+    gap: 4rem;
   }
   .hero__info {
     -webkit-box-align: start;
         -ms-flex-align: start;
-            align-items: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    text-align: left;
+  }
+  .hero__info--btn {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    justify-self: flex-start;
+    display: block;
   }
   .hero__image-box img {
     width: 225px;
     height: 225px;
+  }
+  .hero__image-box--btn {
+    display: none;
   }
   .hamburger {
     display: none;
