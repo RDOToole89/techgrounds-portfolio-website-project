@@ -5,13 +5,22 @@
 
   &__logo {
     position: absolute;
-    top: 2rem;
+    top: 2.3rem;
     left: 2rem;
-    font-size: 2.4rem;
-    font-weight: $font-weight-medium;
+    font-size: 1.6rem;
     color: $primary-color;
     cursor: pointer;
     transition: all 400ms ease;
+
+    &--secondary {
+      color: $primary-color;
+      cursor: pointer;
+      transition: all 400 ms ease;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
 
     &:hover {
       color: $secondary-color;
@@ -91,8 +100,8 @@
 }
 
 .nav-secondary {
-  padding: 2rem 0 0 0;
   display: none;
+  padding: 2rem 0 0 0;
 
   &__list {
     color: $primary-white;
@@ -107,40 +116,32 @@
     text-transform: uppercase;
     transition: all 200ms ease;
     cursor: pointer;
-    padding-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 3px solid transparent;
 
     &.active {
       color: $secondary-color;
       border-bottom: 3px solid white;
-    }
-
-    &:hover {
-      color: $secondary-color;
     }
   }
 }
 
 .hero {
   display: flex;
-  padding: 8rem 4rem;
+  padding: 4.8rem 2rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 6rem;
+  gap: 4.2rem;
 
-  &__left {
+  &__info {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  &__subheading {
-    font-size: 1.8rem;
-    color: $primary-white;
-  }
-
-  &__header {
+  &__heading {
     position: relative;
     color: $primary-color;
     line-height: $line-height-medium;
@@ -157,10 +158,9 @@
     }
   }
 
-  &__header-tertiary {
+  &__heading-tertiary {
     position: relative;
-    font-size: 2rem;
-    color: $primary-white;
+    margin-bottom: 6.4rem;
 
     &::after {
       position: absolute;
@@ -168,23 +168,20 @@
       top: 3rem;
       left: 0;
       height: 0.5rem;
-      width: 105%;
+      width: 100%;
       background-color: $primary-shade-light;
     }
   }
 
-  &__right {
+  &__image-box {
     display: flex;
     flex-direction: column;
-    gap: 5.2rem;
-    justify-content: center;
-    align-items: center;
   }
 
   img {
     object-fit: cover;
-    width: 180px;
-    height: 180px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     border: 3px solid $primary-tint-light;
   }
@@ -209,7 +206,7 @@
 
 @media (min-width: 340px) {
   .hero {
-    padding: 14rem 2rem 0rem 2rem;
+    padding: 10rem 2rem 0rem 2rem;
   }
 }
 
@@ -218,10 +215,14 @@
     font-size: 4.8rem;
   }
 
+  .header__logo {
+    display: none;
+  }
+
   .nav-secondary {
     display: flex;
-    font-size: 1.8rem;
-    justify-content: end;
+    font-size: 2rem;
+    justify-content: space-between;
   }
 
   .hero {
@@ -229,7 +230,11 @@
     flex-direction: row;
     padding: 0rem 4.2rem;
 
-    &__right {
+    &__info {
+      align-items: start;
+    }
+
+    &__image-box {
       img {
         width: 225px;
         height: 225px;
