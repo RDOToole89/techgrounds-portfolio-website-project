@@ -1,4 +1,4 @@
-.header.contact {
+.header.skills {
   position: relative;
   height: calc(100vh - 11px);
   overflow: hidden;
@@ -7,8 +7,8 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: #047857;
-    z-index: -1;
+    background-color: #dc2626;
+    z-index: -2;
   }
 
   &:after {
