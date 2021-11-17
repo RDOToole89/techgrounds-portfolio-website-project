@@ -48,25 +48,27 @@
   }
 
   &__image-box {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 4rem;
-
-    img {
-      transition: all 2s ease;
-
-      &:hover {
-        transform: rotateY(40deg);
-      }
-    }
+    z-index: 4;
   }
 
-  img {
+  &__img {
     object-fit: cover;
     width: 140px;
     height: 140px;
     border-radius: 50%;
     border: 3px solid $primary-tint-light;
     box-shadow: $primary-shadow;
+    position: relative;
+    transition: all 2s ease;
+    filter: drop-shadow(10px 10px 15px $primary-color) saturate(140%)
+      blur(0.4px);
+
+    &:hover {
+      transform: rotateY(40deg);
+    }
   }
 }
