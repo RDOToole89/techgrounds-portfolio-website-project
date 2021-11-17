@@ -8,6 +8,7 @@
     top: 2.3rem;
     left: 2rem;
     font-size: 1.6rem;
+    letter-spacing: $letter-spacing-medium;
     color: $primary-color;
     cursor: pointer;
     transition: all 400ms ease;
@@ -16,6 +17,7 @@
       color: $primary-color;
       cursor: pointer;
       transition: all 400 ms ease;
+      letter-spacing: $letter-spacing-medium;
 
       &:hover {
         color: $secondary-color;

@@ -51,6 +51,14 @@
     display: flex;
     flex-direction: column;
     gap: 4rem;
+
+    img {
+      transition: all 2s ease;
+
+      &:hover {
+        transform: rotateY(40deg);
+      }
+    }
   }
 
   img {
@@ -59,5 +67,6 @@
     height: 140px;
     border-radius: 50%;
     border: 3px solid $primary-tint-light;
+    box-shadow: $primary-shadow;
   }
 }
