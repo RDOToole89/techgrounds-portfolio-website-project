@@ -536,6 +536,13 @@ strong {
 
 .hero__info--btn {
   display: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.hero__info--btn:hover {
+  -webkit-transform: translateY(1.5px);
+          transform: translateY(1.5px);
 }
 
 .hero__heading {
@@ -594,15 +601,21 @@ strong {
   -webkit-box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
           box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   position: relative;
-  -webkit-transition: all 2s ease;
-  transition: all 2s ease;
+  -webkit-animation: 3s ease-in-out 0s infinite alternate image-skew;
+          animation: 3s ease-in-out 0s infinite alternate image-skew;
   -webkit-filter: drop-shadow(10px 10px 15px #36d1c6) saturate(140%) blur(0.4px);
           filter: drop-shadow(10px 10px 15px #36d1c6) saturate(140%) blur(0.4px);
 }
 
-.hero__img:hover {
-  -webkit-transform: rotateY(40deg);
-          transform: rotateY(40deg);
+.contact-form__input, .contact-form__input--submit {
+  background: transparent;
+  color: #fff;
+  border-color: #26928b;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
 }
 
 .header.contact {
@@ -659,12 +672,15 @@ strong {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1rem;
+  -webkit-box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+          box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 }
 
 .contact-form__heading {
   position: relative;
   color: #c3f1ee;
   margin-bottom: 5rem;
+  letter-spacing: 1.6px;
 }
 
 .contact-form__heading::after {
@@ -683,17 +699,24 @@ strong {
   letter-spacing: 1.5px;
 }
 
-.contact-form__input {
-  background: transparent;
-  border-color: #26928b;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  -webkit-transition: background 0.5s ease;
-  transition: background 0.5s ease;
+.contact-form__input--submit {
+  text-transform: uppercase;
+  color: #36d1c6;
+  width: 50%;
+  letter-spacing: 2px;
+  text-align: left;
+  padding: 1rem 0;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.contact-form__input:focus {
+.contact-form__input--submit:hover {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.contact-form:focus {
   outline: none !important;
   border-color: #22cec2;
   -webkit-box-shadow: 0 0 2px #22cec2;
@@ -835,6 +858,60 @@ strong {
   }
   .hamburger {
     display: none;
+  }
+}
+
+@-webkit-keyframes image-skew {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-filter: drop-shadow(10px 10px 15px #31bcb2) saturate(140%) blur(0.4px);
+            filter: drop-shadow(10px 10px 15px #31bcb2) saturate(140%) blur(0.4px);
+  }
+  25% {
+    -webkit-filter: drop-shadow(10px 10px 15px #36d1c6) saturate(140%) blur(0.4px);
+            filter: drop-shadow(10px 10px 15px #36d1c6) saturate(140%) blur(0.4px);
+  }
+  50% {
+    -webkit-filter: drop-shadow(10px 10px 15px #26928b) saturate(140%) blur(0.4px);
+            filter: drop-shadow(10px 10px 15px #26928b) saturate(140%) blur(0.4px);
+  }
+  75% {
+    -webkit-filter: drop-shadow(10px 10px 15px #fef3c7) saturate(140%) blur(0.4px);
+            filter: drop-shadow(10px 10px 15px #fef3c7) saturate(140%) blur(0.4px);
+  }
+  100% {
+    -webkit-transform: rotateY(30deg);
+            transform: rotateY(30deg);
+    -webkit-filter: drop-shadow(10px 10px 15px #fde68a) saturate(140%) blur(0.4px);
+            filter: drop-shadow(10px 10px 15px #fde68a) saturate(140%) blur(0.4px);
+  }
+}
+
+@keyframes image-skew {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-filter: drop-shadow(10px 10px 15px #31bcb2) saturate(140%) blur(0.4px);
+            filter: drop-shadow(10px 10px 15px #31bcb2) saturate(140%) blur(0.4px);
+  }
+  25% {
+    -webkit-filter: drop-shadow(10px 10px 15px #36d1c6) saturate(140%) blur(0.4px);
+            filter: drop-shadow(10px 10px 15px #36d1c6) saturate(140%) blur(0.4px);
+  }
+  50% {
+    -webkit-filter: drop-shadow(10px 10px 15px #26928b) saturate(140%) blur(0.4px);
+            filter: drop-shadow(10px 10px 15px #26928b) saturate(140%) blur(0.4px);
+  }
+  75% {
+    -webkit-filter: drop-shadow(10px 10px 15px #fef3c7) saturate(140%) blur(0.4px);
+            filter: drop-shadow(10px 10px 15px #fef3c7) saturate(140%) blur(0.4px);
+  }
+  100% {
+    -webkit-transform: rotateY(30deg);
+            transform: rotateY(30deg);
+    -webkit-filter: drop-shadow(10px 10px 15px #fde68a) saturate(140%) blur(0.4px);
+            filter: drop-shadow(10px 10px 15px #fde68a) saturate(140%) blur(0.4px);
   }
 }
 /*# sourceMappingURL=main.css.map */

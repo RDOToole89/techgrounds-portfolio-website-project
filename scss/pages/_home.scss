@@ -12,6 +12,11 @@
 
     &--btn {
       display: none;
+      transition: all 0.2s ease;
+
+      &:hover {
+        transform: translateY(1.5px);
+      }
     }
   }
 
@@ -63,12 +68,8 @@
     border: 3px solid $primary-tint-light;
     box-shadow: $primary-shadow;
     position: relative;
-    transition: all 2s ease;
+    animation: 3s ease-in-out 0s infinite alternate image-skew;
     filter: drop-shadow(10px 10px 15px $primary-color) saturate(140%)
       blur(0.4px);
-
-    &:hover {
-      transform: rotateY(40deg);
-    }
   }
 }

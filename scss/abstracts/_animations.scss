@@ -1,0 +1,26 @@
+@keyframes image-skew {
+  0% {
+    transform: rotateY(0deg);
+    filter: drop-shadow(10px 10px 15px $primary-shade-light) saturate(140%)
+      blur(0.4px);
+  }
+
+  25% {
+    filter: drop-shadow(10px 10px 15px $primary-color) saturate(140%)
+      blur(0.4px);
+  }
+
+  50% {
+    filter: drop-shadow(10px 10px 15px $primary-shade-dark) saturate(140%)
+      blur(0.4px);
+  }
+
+  75% {
+    filter: drop-shadow(10px 10px 15px #fef3c7) saturate(140%) blur(0.4px);
+  }
+
+  100% {
+    transform: rotateY(30deg);
+    filter: drop-shadow(10px 10px 15px #fde68a) saturate(140%) blur(0.4px);
+  }
+}
