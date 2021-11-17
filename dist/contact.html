@@ -23,7 +23,8 @@
 
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__list-item"><a href="./index.html">Home</a></li>s
+          <li class="nav__list-item"><a href="./index.html">Home</a></li>
+
           <li class="nav__list-item"><a href="./about.html">About</a></li>
           <li class="nav__list-item"><a href="./skills.html">Skills</a></li>
           <li class="nav__list-item">
@@ -43,7 +44,7 @@
             <li class="nav-secondary__item">
               <a class="link" href="./index.html">Home</a>
             </li>
-            <li class="nav-secondary__item ">
+            <li class="nav-secondary__item">
               <a class="link" href="./about.html">About</a>
             </li>
             <li class="nav-secondary__item">
@@ -60,11 +61,33 @@
         </nav>
       </div>
 
-    
-        <div class="socials">
-          <ion-icon class="icon" name="logo-linkedin"></ion-icon>
-          <ion-icon class="icon" name="logo-github"></ion-icon>
-        </div>
+      <section class="section-contact">
+        <div class="container flex-center">
+        <h2 class="heading-secondary contact-form__heading">Lets get in touch...</h2>
+        <form action="post" class="contact-form">
+   
+          <label class="contact-form__label" for="name">Full name: </label>
+          <input class="contact-form__input type="text" name="name" id="name" required />
+        
+          <label class="contact-form__label" for="email">Email: </label>
+          <input class="contact-form__input type="email" name="email" id="email" required />
+
+  
+          <label class="contact-form__label" for="story"
+            >Tell us your story:</label
+          >
+          <textarea class="contact-form__input id="story" name="story" rows="5" cols="33">
+          
+            </textarea
+          >
+      
+        </form>
+      </div>
+      </section>
+
+      <div class="socials">
+        <ion-icon class="icon" name="logo-linkedin"></ion-icon>
+        <ion-icon class="icon" name="logo-github"></ion-icon>
       </div>
     </header>
     <div class="ribbon"></div>

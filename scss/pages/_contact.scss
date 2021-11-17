@@ -22,3 +22,58 @@
     z-index: -1;
   }
 }
+
+.section-contact {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form {
+  background: rgba($primary-tint-light, 0.2);
+  padding: 1.6rem;
+  color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  &__heading {
+    position: relative;
+    color: $primary-tint-light;
+    margin-bottom: 5rem;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 3.2rem;
+      left: 0;
+      height: 0.5rem;
+      width: 100%;
+      background-color: $primary-shade-light;
+    }
+  }
+
+  &__label {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+
+  &__input {
+    background: transparent;
+    border-color: $primary-shade-dark;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    transition: background 0.5s ease;
+
+    &:focus {
+      outline: none !important;
+      border-color: #22cec2;
+      box-shadow: 0 0 2px #22cec2;
+      background: rgba($primary-color, 0.4);
+    }
+  }
+}

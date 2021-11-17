@@ -54,9 +54,11 @@ body {
 }
 
 .heading-secondary {
-  font-size: 2rem;
+  font-size: 2.4rem;
+  color: #fff;
   line-height: 1.2;
   margin-bottom: 2.4rem;
+  letter-spacing: 0.75px;
 }
 
 .heading-tertiary {
@@ -303,17 +305,13 @@ strong {
   display: none;
 }
 
-.center-gap-1rem {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.flex-center {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1rem;
 }
 
 .flex {
@@ -628,6 +626,77 @@ strong {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: -1;
+}
+
+.section-contact {
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-form {
+  background: rgba(195, 241, 238, 0.2);
+  padding: 1.6rem;
+  color: #36d1c6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form__heading {
+  position: relative;
+  color: #c3f1ee;
+  margin-bottom: 5rem;
+}
+
+.contact-form__heading::after {
+  position: absolute;
+  content: '';
+  top: 3.2rem;
+  left: 0;
+  height: 0.5rem;
+  width: 100%;
+  background-color: #31bcb2;
+}
+
+.contact-form__label {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.contact-form__input {
+  background: transparent;
+  border-color: #26928b;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+.contact-form__input:focus {
+  outline: none !important;
+  border-color: #22cec2;
+  -webkit-box-shadow: 0 0 2px #22cec2;
+          box-shadow: 0 0 2px #22cec2;
+  background: rgba(54, 209, 198, 0.4);
 }
 
 .header.about {
