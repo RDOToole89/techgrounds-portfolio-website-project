@@ -39,16 +39,17 @@ body {
 
 .subheading {
   display: block;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   color: $primary-white;
   font-weight: 500;
   color: $primary-white;
   text-transform: uppercase;
-  letter-spacing: $letter-spacing-small;
+  letter-spacing: $letter-spacing-medium;
   margin-bottom: 1.6rem;
 }
 
 .paragraph-text {
   font-size: 1.2rem;
+  color: $primary-white;
   line-height: $line-height-paragraph-default;
 }

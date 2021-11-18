@@ -1,4 +1,4 @@
-.header.about {
+.header.about-section {
   position: relative;
   height: calc(100vh - 11px);
   overflow: hidden;
@@ -20,5 +20,76 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: -1;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 3rem;
+
+  &__heading {
+    align-self: flex-start;
+    position: relative;
+    margin-bottom: 4rem;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 3.2rem;
+      left: 0;
+      height: 0.5rem;
+      width: 100%;
+      background-color: $primary-shade-light;
+    }
+  }
+
+  &__subheading {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: $primary-white;
+    padding: 1rem 2rem;
+    background-color: rgba($primary-grey, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    gap: 1.5rem;
+    cursor: pointer;
+    transform: translateX(200%);
+
+    &--one {
+      animation: 1s forwards 0.5s alternate pop-in-left;
+    }
+
+    &--two {
+      animation: 1.5s forwards 1s alternate pop-in-left;
+    }
+
+    &--three {
+      animation: 2s forwards 1.5s alternate pop-in-left;
+    }
+  }
+
+  &-description {
+    width: 100%;
+    background-color: rgba($secondary-shade-dark, 0.2);
+    padding: 1rem 2rem;
+    transform: translateY(1000%);
+    animation: 1s forwards 1s alternate pop-in-bottom;
+
+    &__subheading {
+      letter-spacing: 3px;
+    }
+
+    &__heading-tertiary {
+      letter-spacing: 2px;
+      color: $primary-white;
+    }
+
+    &__text {
+      color: $primary-color;
+    }
   }
 }

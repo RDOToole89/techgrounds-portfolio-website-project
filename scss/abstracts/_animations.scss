@@ -24,3 +24,33 @@
     filter: drop-shadow(10px 10px 15px #fde68a) saturate(140%) blur(0.4px);
   }
 }
+
+@keyframes pop-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-150%) scale(1.2);
+    color: white;
+  }
+
+  95% {
+    transform: translateY(2px);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateX(0%) scale(1);
+  }
+}
+
+@keyframes pop-in-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(150%) scale(1.1);
+    color: $secondary-color;
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0%) scale(1);
+  }
+}
