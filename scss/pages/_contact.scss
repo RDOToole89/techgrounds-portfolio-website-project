@@ -41,6 +41,19 @@
   align-items: center;
 }
 
+.circle {
+  position: absolute;
+  // border-radius: 50%;
+  top: 40%;
+  left: 65%;
+  width: 25rem;
+  height: 25rem;
+  background: rgba($primary-black, 0.2);
+  z-index: -1;
+  transform: translate(-250%, -250%);
+  animation: 2s forwards 0.2s linear rotate-in-top-circle;
+}
+
 .contact-form {
   background: rgba($primary-tint-light, 0.2);
   padding: 1.2rem;

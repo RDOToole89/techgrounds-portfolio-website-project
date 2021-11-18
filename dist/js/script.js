@@ -1,3 +1,5 @@
+// Hamburger Menu
+
 const hamburgerMenu = document.querySelector('.hamburger');
 const navigation = document.querySelector('.nav');
 const listItems = document.querySelectorAll('.nav__list-item');
@@ -12,4 +14,4 @@ hamburgerMenu.addEventListener('click', () => {
   [...listItems].forEach((item) => item.classList.toggle('open-item'));
 });
 
-console.log(listItems);
+console.log('Script.JS loaded...');

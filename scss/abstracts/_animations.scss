@@ -69,6 +69,33 @@
   }
 }
 
+@keyframes rotate-in-top-circle {
+  0% {
+    transform: translate(-250%, -250%);
+  }
+
+  25% {
+    transform: translate(-180%, -180%);
+    // border-radius: 40%;
+  }
+
+  50% {
+    transform: translate(-110%, -110%);
+    // border-radius: 30%;
+  }
+
+  75% {
+    transform: translate(-30%, -30%);
+    // border-radius: 20%;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-radius: 0;
+    background-color: rgba(#8b5cf6, 0.3);
+  }
+}
+
 @keyframes beat {
   0% {
     transform: scale(1.1);

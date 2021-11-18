@@ -62,7 +62,7 @@
   height: 100%;
   z-index: 100;
   transform: translateX(100%);
-  transition: all 1s ease;
+  transition: all 0.6s ease;
 
   &.open {
     transform: translateX(0%);

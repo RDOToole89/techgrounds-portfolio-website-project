@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="../css/main.css" />
     <link rel="shortcut icon" href="#" type="image/x-icon" />
     <title>TechGrounds - Portfolio Website - Roibin O'Toole</title>
   </head>
@@ -19,11 +19,11 @@
       <div id="particles-js"></div>
 
       <div class="hamburger collapse"><span></span></div>
-      <a href="./index.html" class="header__logo">&lt;RDO/&gt;</a>
+      <a href="../../index.html" class="header__logo">&lt;RDO/&gt;</a>
 
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__list-item"><a href="./index.html">Home</a></li>
+          <li class="nav__list-item"><a href="../../index.html">Home</a></li>
           <li class="nav__list-item"><a href="./about.html">About</a></li>
           <li class="nav__list-item"><a href="./skills.html">Skills</a></li>
           <li class="nav__list-item">
@@ -35,13 +35,13 @@
 
       <div class="container">
         <nav class="nav-secondary">
-          <a href="./index.html" class="header__logo--secondary">
+          <a href="../../index.html" class="header__logo--secondary">
             &lt;RDO/&gt;
           </a>
 
           <ul class="nav-secondary__list">
             <li class="nav-secondary__item">
-              <a class="link" href="./index.html">Home</a>
+              <a class="link" href="../../index.html">Home</a>
             </li>
             <li class="nav-secondary__item ">
               <a class="link" href="./about.html">About</a>
@@ -60,18 +60,16 @@
         </nav>
       </div>
 
+
     
-        <div class="socials">
-          <ion-icon class="icon" name="logo-linkedin"></ion-icon>
-          <ion-icon class="icon" name="logo-github"></ion-icon>
-        </div>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/roibinotoole/"><ion-icon class="icon" name="logo-linkedin"></ion-icon></a> 
+        <a href="https://github.com/RDOToole89"><ion-icon class="icon" name="logo-github"></ion-icon></a>
+       </div>
       </div>
     </header>
     <div class="ribbon"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="./js/particles.js"></script>
-    <script src="./js/script.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -80,5 +78,12 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS.load('particles-js', 'particles.json', function () {
+        console.log('particles.json loaded...');
+      });
+    </script>
+    <script defer src="../js/script.js"></script>
   </body>
 </html>
