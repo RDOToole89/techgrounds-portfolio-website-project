@@ -113,3 +113,21 @@
     transform: scale(1);
   }
 }
+
+@keyframes viewport-up {
+  0% {
+    transform: translateY(100vh);
+  }
+
+  90% {
+    transform: rotate(45deg);
+  }
+
+  95% {
+    transform: rotate(-135deg);
+  }
+
+  100% {
+    transform: translateY(15vh);
+  }
+}
