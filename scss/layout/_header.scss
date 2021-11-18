@@ -16,6 +16,7 @@
     z-index: 100;
 
     &--secondary {
+      font-weight: $font-weight-semi-bold;
       color: $primary-color;
       font-size: 1.8rem;
       cursor: pointer;

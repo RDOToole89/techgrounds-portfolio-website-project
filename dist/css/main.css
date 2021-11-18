@@ -355,6 +355,7 @@ strong {
 }
 
 .header__logo--secondary {
+  font-weight: 600;
   color: #36d1c6;
   font-size: 1.8rem;
   cursor: pointer;
