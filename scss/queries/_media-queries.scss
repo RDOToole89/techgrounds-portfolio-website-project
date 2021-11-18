@@ -1,16 +1,24 @@
 @media (min-width: 340px) {
-  .heading-primary {
-    font-size: 3.2rem;
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (min-width: 400px) {
+  .section-about {
+    padding-top: 6.4rem;
   }
 
-  .hero {
-    padding: 8rem 2rem 0rem 2rem;
+  .about__subheading {
+    width: 90%;
   }
 }
 
 @media (min-width: 600px) {
-  .heading-primary {
-    font-size: 4.8rem;
+  // Header
+
+  html {
+    font-size: 75%;
   }
 
   .header__logo {
@@ -19,9 +27,10 @@
 
   .nav-secondary {
     display: flex;
-    font-size: 1.6rem;
     justify-content: space-between;
   }
+
+  // Hero
 
   .hero {
     height: 80%;
@@ -31,12 +40,9 @@
 
     &__info {
       align-items: flex-start;
-      justify-content: flex-start;
       text-align: left;
 
       &--btn {
-        align-items: flex-start;
-        justify-self: flex-start;
         display: block;
       }
     }
@@ -53,7 +59,40 @@
     }
   }
 
+  // Hamburger
+
   .hamburger {
     display: none;
+  }
+
+  // About
+
+  .section-about {
+    height: 75vh;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 850px) {
+  html {
+    font-size: 77.5%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-about {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 100%;
   }
 }

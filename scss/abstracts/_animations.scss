@@ -54,3 +54,17 @@
     transform: translateY(0%) scale(1);
   }
 }
+
+@keyframes rotate-in-top {
+  0% {
+    transform: rotate(45deg) translate(-250%, -50%);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(45deg) translate(-50%, -50%);
+  }
+}
