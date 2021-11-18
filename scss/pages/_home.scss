@@ -12,19 +12,18 @@
 
     &--btn {
       display: none;
-      transition: all 0.2s ease;
+      transition: all 0.3s ease;
 
       &:hover {
         transform: translateY(1.5px);
+        box-shadow: 1px 1px 18px 0.1px rgba(#fef3c7, 0.2);
       }
     }
   }
 
   &__heading {
-    position: relative;
     color: $primary-color;
     line-height: $line-height-medium;
-    margin-bottom: 2.4rem;
     transition: all 0.5s ease;
 
     span {
@@ -58,6 +57,15 @@
     flex-direction: column;
     gap: 4rem;
     z-index: 4;
+
+    &--btn {
+      transition: all 0.3s ease-in-out 0.1s;
+
+      &:hover {
+        transform: translateY(1.5px);
+        box-shadow: 1px 1px 18px 0.1px rgba(#fef3c7, 0.2);
+      }
+    }
   }
 
   &__img {
