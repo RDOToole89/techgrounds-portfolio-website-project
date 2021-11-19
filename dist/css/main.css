@@ -17,11 +17,11 @@ img {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #36d1c6;
 }
 
 a:visited {
-  color: #36d1c6;
+  color: #26928b;
 }
 
 .container {

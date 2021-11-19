@@ -16,9 +16,9 @@ img {
 
 a {
   text-decoration: none;
-  color: black;
+  color: $primary-color;
 }
 
 a:visited {
-  color: $primary-color;
+  color: $primary-shade-dark;
 }
