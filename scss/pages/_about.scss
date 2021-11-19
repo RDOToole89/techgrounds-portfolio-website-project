@@ -1,14 +1,8 @@
 .header.about-section {
-  position: relative;
-  height: calc(100vh - 11px);
-  overflow: hidden;
+  @extend %header;
 
   #particles-js {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: #1d4ed8;
-    z-index: -2;
+    @include particles(#1d4ed8, -2);
   }
 
   &:after {
@@ -28,7 +22,7 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding: 9.6rem 2.4rem 8.6rem 2.4rem;
+  padding: 7.6rem 2.4rem 8.6rem 2.4rem;
 }
 
 .block {

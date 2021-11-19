@@ -108,7 +108,6 @@
 
 .nav-secondary {
   display: none;
-  padding: 2rem 0 0 0;
 
   &__list {
     display: flex;
@@ -123,13 +122,12 @@
     text-transform: uppercase;
     transition: all 200ms ease;
     cursor: pointer;
-    padding-bottom: 0.3rem;
     border-bottom: 3px solid transparent;
+    transition: all 0.4s ease;
 
     &.active .link {
       color: $secondary-color;
-      padding-bottom: 5px;
-      border-bottom: 3px solid white;
+      border-bottom: 4px solid white;
     }
   }
 }

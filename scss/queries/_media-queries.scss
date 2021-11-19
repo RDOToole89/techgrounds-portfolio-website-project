@@ -28,6 +28,7 @@
   .nav-secondary {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   // Hero
@@ -69,7 +70,6 @@
 
   .section-about {
     height: 75vh;
-
     align-items: center;
     justify-content: center;
   }
@@ -77,17 +77,29 @@
   .about {
     flex-direction: row;
   }
+
+  // Skills
+
+  .section-skills {
+    max-width: 75%;
+  }
 }
 
 @media (min-width: 850px) {
   html {
     font-size: 77.5%;
   }
+
+  .section-skills {
+    margin: 0 auto;
+    max-width: 70%;
+    padding-top: 6.4rem;
+  }
 }
 
 @media (min-width: 1024px) {
-  .section-about {
-    width: 70%;
+  .section-skills-text__heading {
+    justify-self: center;
   }
 }
 
