@@ -114,12 +114,13 @@
   }
 }
 
-@keyframes viewport-up {
+@keyframes fade-in-bottom {
   0% {
-    transform: translateY(-120vh);
+    opacity: 0%;
+    transform: translateY(20rem);
   }
 
   100% {
-    transform: translateY(-20vh);
+    opacity: 100%;
   }
 }

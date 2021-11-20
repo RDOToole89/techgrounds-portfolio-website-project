@@ -972,8 +972,7 @@ strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 80vh;
-  margin: 4rem auto;
+  height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -987,7 +986,7 @@ strong {
 }
 
 .section-skills-text {
-  padding: 3.2rem 0;
+  padding: 6.2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1022,48 +1021,54 @@ strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 2rem;
-  -webkit-box-flex: 0.5;
-      -ms-flex: 0.5 1 auto;
-          flex: 0.5 1 auto;
-  padding-top: 14rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
 }
 
 .section-skills__icon {
   width: 2.5rem;
   height: 2.5rem;
-  -webkit-transform: translateY(-120vh);
-          transform: translateY(-120vh);
+  -webkit-transform: translateY(-15rem);
+          transform: translateY(-15rem);
+  opacity: 0;
 }
 
 .section-skills__icon--one {
-  -webkit-animation: 1.8s forwards 0s linear viewport-up;
-          animation: 1.8s forwards 0s linear viewport-up;
+  -webkit-animation: 1.8s forwards 0s linear fade-in-bottom;
+          animation: 1.8s forwards 0s linear fade-in-bottom;
 }
 
 .section-skills__icon--two {
-  -webkit-animation: 1.8s forwards 0.5s linear viewport-up;
-          animation: 1.8s forwards 0.5s linear viewport-up;
+  -webkit-animation: 1.8s forwards 0.5s linear fade-in-bottom;
+          animation: 1.8s forwards 0.5s linear fade-in-bottom;
 }
 
 .section-skills__icon--three {
-  -webkit-animation: 1.2s forwards 0.8s linear viewport-up;
-          animation: 1.2s forwards 0.8s linear viewport-up;
+  -webkit-animation: 1.2s forwards 0.8s linear fade-in-bottom;
+          animation: 1.2s forwards 0.8s linear fade-in-bottom;
 }
 
 .section-skills__icon--four {
-  -webkit-animation: 1.1s forwards 1s linear viewport-up;
-          animation: 1.1s forwards 1s linear viewport-up;
+  -webkit-animation: 1.1s forwards 1s linear fade-in-bottom;
+          animation: 1.1s forwards 1s linear fade-in-bottom;
 }
 
 .section-skills__icon--five {
-  -webkit-animation: 1.25s forwards 1.2s linear viewport-up;
-          animation: 1.25s forwards 1.2s linear viewport-up;
+  -webkit-animation: 1.25s forwards 1.2s linear fade-in-bottom;
+          animation: 1.25s forwards 1.2s linear fade-in-bottom;
 }
 
 .section-skills__icon--six {
-  -webkit-animation: 1.5s forwards 1.1s linear viewport-up;
-          animation: 1.5s forwards 1.1s linear viewport-up;
+  -webkit-animation: 1.5s forwards 1.1s linear fade-in-bottom;
+          animation: 1.5s forwards 1.1s linear fade-in-bottom;
 }
 
 @media (min-width: 340px) {
@@ -1407,25 +1412,25 @@ strong {
   }
 }
 
-@-webkit-keyframes viewport-up {
+@-webkit-keyframes fade-in-bottom {
   0% {
-    -webkit-transform: translateY(-120vh);
-            transform: translateY(-120vh);
+    opacity: 0%;
+    -webkit-transform: translateY(20rem);
+            transform: translateY(20rem);
   }
   100% {
-    -webkit-transform: translateY(-20vh);
-            transform: translateY(-20vh);
+    opacity: 100%;
   }
 }
 
-@keyframes viewport-up {
+@keyframes fade-in-bottom {
   0% {
-    -webkit-transform: translateY(-120vh);
-            transform: translateY(-120vh);
+    opacity: 0%;
+    -webkit-transform: translateY(20rem);
+            transform: translateY(20rem);
   }
   100% {
-    -webkit-transform: translateY(-20vh);
-            transform: translateY(-20vh);
+    opacity: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
